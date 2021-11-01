@@ -1,0 +1,59 @@
+#banner {
+	margin-bottom: 100px;
+	.banner__container {
+		.banner__title {
+			text-align: center;
+
+			p {
+				margin-bottom: 2rem;
+				font-size: 30px;
+				font-family: "Sulphur Point", sans-serif;
+			}
+
+			.sub-title {
+				font-size: 150px;
+				font-family: "Syne", sans-serif;
+			}
+		}
+
+		.banner__hero {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.hero__container-image {
+				display: flex;
+				.hero-image {
+					img {
+						border: 2px solid black;
+						width: 500px;
+					}
+
+					&:first-child {
+						position: relative;
+						left: 20px;
+					}
+
+					&:last-child {
+						position: relative;
+						top: -60px;
+						left: -20px;
+					}
+				}
+			}
+
+			.btn-prev,
+			.btn-next {
+				position: relative;
+			}
+
+			.btn-prev {
+				left: 100px;
+			}
+
+			.btn-next {
+				right: 100px;
+			}
+		}
+	}
+}

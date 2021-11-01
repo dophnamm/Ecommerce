@@ -1,0 +1,60 @@
+#login {
+	height: 100vh;
+	.container {
+		.login__container {
+			width: 800px;
+			margin: 200px auto;
+			padding: 2rem 1rem;
+			border: 1px solid black;
+
+			.login__title {
+				margin-bottom: 2rem;
+			}
+
+			.form-group {
+				margin-bottom: 0.8rem;
+				display: flex;
+				flex-direction: column;
+
+				label {
+					margin-bottom: 0.5rem;
+					font-size: 14px;
+				}
+
+				input {
+					padding: 0.8rem 1rem;
+					outline: none;
+					border-color: black;
+					font-size: 16px;
+				}
+			}
+
+			.btn-signin {
+				padding: 0.4rem 2rem;
+				margin: 1rem 0;
+				background-color: black;
+				color: #fff;
+				cursor: pointer;
+			}
+
+			.sub-create {
+				font-size: 12px;
+				margin-bottom: 1rem;
+			}
+
+			.btn-create {
+				width: 100%;
+				padding: 0.4rem 1rem;
+				background-color: transparent;
+				border: 1px solid black;
+				cursor: pointer;
+				transition: all 0.3s ease;
+
+				&:hover {
+					background-color: black;
+					color: white;
+				}
+			}
+		}
+	}
+}

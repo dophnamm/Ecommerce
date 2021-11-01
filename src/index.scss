@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&family=Syne:wght@600;700;800&display=swap");
+
+// font-family: 'Sulphur Point', sans-serif;
+// font-family: 'Syne', sans-serif;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.container {
+	width: 1440px;
+	margin: 0 auto;
+	padding: 0 12px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -12px;
+}
+
+.btn {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	padding: 0.3rem;
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		height: 1px;
+		width: 0%;
+		background-color: black;
+		bottom: 0%;
+		left: 0%;
+		transition: all 0.3s ease;
+	}
+
+	&:hover {
+		&::before {
+			width: 100%;
+		}
+	}
+}

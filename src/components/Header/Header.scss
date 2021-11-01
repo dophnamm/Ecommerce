@@ -1,0 +1,96 @@
+#header {
+	position: sticky;
+	background-color: #fff;
+	z-index: 10;
+	top: 0;
+
+	.header__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 2rem 0;
+		margin-bottom: 50px;
+
+		.header__logo {
+			display: flex;
+			align-items: center;
+
+			&-shopIcon {
+				margin-right: 1rem;
+				font-size: 40px !important;
+			}
+
+			&-name {
+				font-size: 30px;
+			}
+		}
+
+		.header__search {
+			display: flex;
+			align-items: center;
+			position: relative;
+
+			&::before {
+				content: "";
+				position: absolute;
+				height: 1px;
+				width: 100%;
+				bottom: -4px;
+				left: 0;
+				background-color: #000;
+			}
+
+			&-searchIcon {
+				font-size: 24px !important;
+			}
+
+			&-input {
+				width: 400px;
+				height: 38px;
+				border: none;
+				outline: none;
+				font-size: 15px;
+				padding: 0 12px;
+			}
+		}
+
+		.header__navigation {
+			display: flex;
+			align-items: center;
+
+			.nav__item {
+				margin: 0 0.5rem;
+
+				&-userIcon,
+				&-heartIcon,
+				&-bagIcon {
+					font-size: 26px !important;
+				}
+
+				&:last-child {
+					display: flex;
+					align-items: center;
+					position: relative;
+
+					.nav__item-bagIcon {
+						margin-right: 0.5rem;
+					}
+
+					span {
+						position: absolute;
+						top: -8px;
+						right: 0;
+						background-color: #000;
+						color: #fff;
+						border-radius: 50%;
+						width: 20px;
+						height: 20px;
+						font-size: 11px;
+						display: grid;
+						place-items: center;
+					}
+				}
+			}
+		}
+	}
+}

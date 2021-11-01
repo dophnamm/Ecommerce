@@ -1,0 +1,86 @@
+#subtotal {
+	width: 25%;
+	padding: 0 12px;
+	position: relative;
+	margin: 20px 0;
+
+	h4 {
+		font-weight: normal;
+		font-weight: 600;
+	}
+
+	.subtotal-title {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 2rem;
+		border-bottom: 1px solid #d9d9d9;
+		padding-bottom: 12px;
+
+		h3 {
+			color: #d9d9d9;
+		}
+	}
+
+	.subtotal-info {
+		.total-product,
+		.total-price {
+			text-transform: capitalize;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 0.8rem;
+			font-weight: 600;
+		}
+
+		.total-price {
+			.price {
+				display: flex;
+				align-items: center;
+
+				small,
+				p {
+					font-size: 16px;
+				}
+
+				small {
+					margin-right: 0.4rem;
+				}
+			}
+		}
+
+		.btn-payment {
+			position: absolute;
+			padding: 0.5rem 1rem;
+			left: 50%;
+			transform: translateX(-50%);
+			margin: 20px 0;
+			border: none;
+			position: relative;
+			cursor: pointer;
+			background-color: black;
+			color: white;
+			transition: all 0.3s ease;
+
+			&::before {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				border: 1px solid black;
+				left: 6px;
+				top: 6px;
+				transition: all 0.3s ease;
+			}
+
+			&:hover {
+				background-color: white;
+				color: black;
+				&::before {
+					top: 0;
+					left: 0;
+				}
+			}
+		}
+	}
+}
